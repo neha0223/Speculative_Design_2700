@@ -2,4 +2,7 @@ This is a stats screen!
 
 *stat_chart
   percent Popularity
-  text Popularity
+  opposed pair danielle_likeability Like
+    Dislike
+  opposed pair jayden_likeability Like
+    Dislike

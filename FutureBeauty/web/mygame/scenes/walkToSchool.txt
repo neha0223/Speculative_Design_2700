@@ -1,0 +1,8 @@
+
+(Walk to school sequence)
+
+*choice
+  #hi
+    *finish
+  #hello
+    *finish

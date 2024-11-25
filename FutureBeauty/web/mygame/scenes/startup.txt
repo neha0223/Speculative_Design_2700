@@ -1,0 +1,29 @@
+*title Future Beauty
+*author X
+*scene_list
+  startup
+  breakfast
+  walkToSchool
+  school
+  shopping
+  endOfDay
+
+*create popularity 50
+
+*page_break
+
+Its a bright morning, the sun beats down on you through the window.//
+
+Ugh. You'll have to get used to this.
+
+Earth. 31XX. With its stupid bright daylight because of its stupid atmosphere. The martian atmosphere would betray you like this.
+
+You should probably get out of bed.
+
+*choice
+  #Get Dressed.
+    *finish
+  #Brush Your Teeth.
+    *finish
+  #Stay in Bed.
+    *finish

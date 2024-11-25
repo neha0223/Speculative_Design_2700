@@ -1,0 +1,8 @@
+
+(shopping sequence)
+
+*choice
+  #hi
+    *finish
+  #hello
+    *finish

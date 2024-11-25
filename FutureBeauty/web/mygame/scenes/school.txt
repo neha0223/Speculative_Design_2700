@@ -1,0 +1,8 @@
+
+(School and lunch sequence)
+
+*choice
+  #hi
+    *finish
+  #hello
+    *finish

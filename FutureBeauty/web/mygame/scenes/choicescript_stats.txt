@@ -1,9 +1,51 @@
-This is a stats screen!
+*label main
+*choice
+  #View character stats.
+    *goto stats
+  #View inventory.
+    *goto inventory
+  #Return to game.
+    *finish 
+
+*label stats
+Here are your current stats:
+
+Your Name: 
+${name}
 
 *stat_chart
-  text name
   percent Popularity
-  opposed pair danielle_likeability Like
+Danielle's approval:
+*stat_chart
+  opposed_pair danielle_likeability
+    Like
     Dislike
-  opposed pair jayden_likeability Like
+Jayden's approval:
+*stat_chart
+  opposed_pair jayden_likeability
+    Like
     Dislike
+
+*choice
+  #Go back to the main menu.
+    *goto main  # Go back to the main menu
+  #Return to the game.
+    *finish
+
+*label inventory
+You have:
+*if (has_martianClothes)
+  *line_break
+  - Martian clothes
+*if (has_lunch)
+  *line_break
+  - Packed lunch
+*if (money > 0)
+  *line_break
+  - $${money}
+
+*choice
+  #Go back to the main menu.
+    *goto main  # Go back to the main menu
+  #Return to the game.
+    *finish

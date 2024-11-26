@@ -1,12 +1,8 @@
-*create plateFull false
-*create plateHalfFull false
-*create plateEmpty false
-
 The stairs don't creak as you step on them. Every pace only seems to warrant a dull, metallic echo, leaving the stairway quiet and haunting.
 
 It doesn't get much better as you reach the first floor, but it does get louder, in more than just sound. The house you're staying in is warm and homey, littered with fake-looking plants and family photos of various poses and children's toys- a lived-in clutter.
 
-Ships stroll past the window, large and small, but they're quiet so you don't pay them much mind.
+Ships stroll past the window, large and small, but they're quiet so you don't pay them much mind. You pass your backpack, leaning on a wall, on your way to the kitchen.
 
 A clank of metal on glass from the kitchen, then:
 
@@ -23,7 +19,7 @@ Did you sleep well?"
     *goto next1
   #Stay silent.
     "It's alright," An awkward smile touches her lips. "You don't have to answer if you don't want to."
-    *goto next1b
+    *goto next1
 
 *label next1
 "Either way, you don't have that much time until you have to get to school. I'm assuming you still know the way...? It's fine, uh, I can give you the directions again, but first! Breakfast! Grab as much as you need to fill your belly." She makes to leave the room, but not before saying "I'm going to go check on the baby if you don't mind."
@@ -33,16 +29,72 @@ There was a variety of food in the kitchen: fruits, greens, eggs fresh off the s
   #Fill your plate. Don't want to go hungry!
     Everything could not look better and your mouth salivates at the thought of eating it. You feel gratefulness well up inside you. 
     *set plateFull true
-  #Take a little. You're not that hungry...
+    *goto next2
+  #Take a little. You're not [i]that[/i] hungry...
     Stuffing your face may do the opposite of what you want, but a little can't hurt, right?
     *set plateHalfFull true
+    *goto next2
   #Skip breakfast altogether.
     The thought of eating anything makes your stomach churn. You'd hate to see what happened if you were to eat anything.
 
     ...Maybe not eating anything would be for the best.
     *set plateEmpty true
+    *goto next2
   #Leave the house entirely.
     Maybe it's just you, but the food is entirely unappetizing. The fruit looks too fake, the greens too discolored, the meat too plastic. In fact, the thought of staying in this house leaves you nauseous.
 
-    Without a second thought or a goodbye, you take your backpack that had been leading by the wall, and leave.
+    Without a second thought or a idea to say goodbye, you take your backpack and leave.
       *finish
+
+*label next2
+You settle yourself at the table, plate in hand. Terra returns moments after, the baby seemingly settled, glancing at your plate as she walks by.
+
+
+*if (plateFull)
+  She seems satified by the state of your plate, nodding to herself pleasantly as she continues on.
+  *set fed true
+  *goto next3
+*elseif (plateHalfFull)
+  Her lips quirk into a small frown, however she doesn't voice anything as she continues on her way.
+  *set hungry true
+  *goto next3
+*elseif (plateEmpty)
+  She stops, bitting her already worried-bitten lips. "${name}... are you [i]sure[/i] you don't want anything?"
+  *choice
+    #Give in. You guess you could try to eat...
+      Terra takes the plate from in front of you- slowly, as if she's dealing with a wild animal- before heading off to the kitchen to begin loading it up with food. Thankfully, she doesn't put too much.
+
+      The plate is settled in front of you moments later with a quiet clink of porcelain.
+      *set hungry true
+      *goto next3
+    #Double down. You're [i]not[/i] hungry.
+      Terra's eyes shift, but she blessedly doesn't push any further.
+      *set starving true
+      *goto next3
+
+*label next3
+
+"So, today is going to go great for you, I know it. But, um, I was thinking of packing you a lunch, would that be okay with you? I could always give you money instead. Or both? Whatever you prefer, dear..."
+*choice
+  #Ask for the lunch.
+    Terra seems happy with your choice, moving to the fridge to get what she needs.
+    *set has_lunch true
+    *goto next4
+  #Ask for the money.
+    Terra digs through her purse before producing a bill, sliding the
+    *set money +10
+    *goto next4
+  #Ask for both.
+    Terra seems happy with your choice, moving to the fridge to get what she needs, but not before setting a shiny $10 bill on the table in front of you.
+    *set has_lunch true
+    *set money +10
+    *goto next4
+
+*label next4
+
+She glances at a clock. "I think you should head out now. You'll need time to get to school."
+*choice
+  #Leave.
+
+
+

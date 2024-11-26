@@ -16,12 +16,28 @@
 *create option2_picked false
 *create option3_picked false
 
+*create plateFull false
+*create plateHalfFull false
+*create plateEmpty false
+
+*create fed false
+*create hungry false
+*create starving false
+
+*create inventory ""
+*create has_martianClothes false
+*create has_lunch false
+*create money 0
+
+*create danielle_likeability 50
+*create jayden_likeability 50
+
 Please input name:
 *input_text name
 
 *page_break
 
-Its a bright morning, an artificial sun beats down on you through the window.
+It's a bright morning, an artificial sun beats down on you through the window.
 
 Ugh. You'll have to get used to this.
 
@@ -46,7 +62,7 @@ You should probably get out of bed.
       #Wear what your host mother helped you pick out.
         You feel a bit uncomfortable. Hopefully the feeling wears off...
         *set popularity +5
-        *set martianClothes true
+        *set has_martianClothes true
         *goto main_menu
   *if (not(option2_picked)) #Brush Your Teeth.
     *set option2_picked true

@@ -9,12 +9,14 @@
   endOfDay
 
 *create popularity 50
-*create danielle_likeability 50
-*create jayden_likeability 50
+*create name ""
 
 *create option1_picked false
 *create option2_picked false
 *create option3_picked false
+
+Please input name:
+*input_text name
 
 *page_break
 

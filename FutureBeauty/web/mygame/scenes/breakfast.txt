@@ -1,8 +1,24 @@
+The stairs don't creak as you step on them. Every pace only seems to warrant a dull, metallic echo, leaving the stairway quiet and haunting.
 
-(Breakfast sequence)
+It doesn't get much better as you reach the first floor, but it does get louder, in more than just sound. The house you're staying in is warm and homey, littered with fake-looking plants and family photos of various poses and children's toys- a lived-in clutter.
 
+Ships stroll past the window, large and small, but they're quiet so you don't pay them much mind.
+
+A clank of metal on glass from the kitchen, then:
+
+"Oh, hello, ${name}. Did you sleep well?" Terra, your host mother.
 *choice
-  #hi
-    *finish
-  #hello
-    *finish
+  #"Yes."
+    "I'm glad. It's- It's good to see you settling in so well." 
+  #"No."
+    She frown, eyes pitying. "Oh... I'm sorry, dear. Being in a new place is hard, I- I can only imagine how you feel.
+  #Stay silent.
+    "It's alright," An awkward smile touches her lips. "You don't have to answer if you don't want to."
+"Either way, you don't have that much time until you have to get to school. I'm assuming you still know the way...? It's fine, uh, I can give you the directions again, but first! Breakfast! Grab as much as you need to fill your belly, I'm going to go check on the baby if you don't mind."
+
+There was a variety of food in the kitchen: fruits, greens, eggs fresh off the stove, various meats.
+*choice
+  #Fill your plate. Don't want to go hungry!
+  #Take a little. You're not that hungry...
+  #Skip breakfast altogether.
+  #Leave the house early.

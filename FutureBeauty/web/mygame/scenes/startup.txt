@@ -10,6 +10,7 @@
 
 *create popularity 50
 *create name ""
+*create martianClothes false
 
 *create option1_picked false
 *create option2_picked false
@@ -45,6 +46,7 @@ You should probably get out of bed.
       #Wear what your host mother helped you pick out.
         You feel a bit uncomfortable. Hopefully the feeling wears off...
         *set popularity +5
+        *set martianClothes true
         *goto main_menu
   *if (not(option2_picked)) #Brush Your Teeth.
     *set option2_picked true

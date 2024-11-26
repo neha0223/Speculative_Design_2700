@@ -1,6 +1,7 @@
 This is a stats screen!
 
 *stat_chart
+  text name
   percent Popularity
   opposed pair danielle_likeability Like
     Dislike

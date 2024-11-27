@@ -1,5 +1,4 @@
-
-(Walk to school sequence)
+You decide Mars is... different.
 
 *choice
   #hi

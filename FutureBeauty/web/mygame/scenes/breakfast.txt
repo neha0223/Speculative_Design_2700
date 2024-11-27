@@ -8,8 +8,9 @@ A clank of metal on glass from the kitchen, then:
 
 "Oh, hello, ${name}!" Terra, your host mother.
 *if (martianClothes)
-  "I see you're wearing what we picked out! I'm happy you like them!
-Did you sleep well?"
+  "I see you're wearing what we picked out! I'm happy you like them! Did you sleep well?"
+*elseif not(martianClothes)
+  "Did you sleep well?"
 *choice
   #"Yes."
     "I'm glad. It's- It's good to see you settling in so well." 
@@ -44,7 +45,7 @@ There was a variety of food in the kitchen: fruits, greens, eggs fresh off the s
     Maybe it's just you, but the food is entirely unappetizing. The fruit looks too fake, the greens too discolored, the meat too plastic. In fact, the thought of staying in this house leaves you nauseous.
 
     Without a second thought or a idea to say goodbye, you take your backpack and leave.
-      *finish
+    *finish
 
 *label next2
 You settle yourself at the table, plate in hand. Terra returns moments after, the baby seemingly settled, glancing at your plate as she walks by.
@@ -95,6 +96,7 @@ You settle yourself at the table, plate in hand. Terra returns moments after, th
 She glances at a clock. "I think you should head out now. You'll need time to get to school."
 *choice
   #Leave.
+    *finish
 
 
 

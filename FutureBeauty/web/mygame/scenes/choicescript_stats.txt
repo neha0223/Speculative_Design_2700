@@ -25,6 +25,21 @@ Jayden's approval:
   opposed_pair jayden_likeability
     Like
     Dislike
+Ruven's approval:
+*stat_chart
+  opposed_pair ruven_likeability
+    Like
+    Dislike
+Cydrea's approval:
+*stat_chart
+  opposed_pair cydrea_likeability
+    Like
+    Dislike
+Syran's approval:
+*stat_chart
+  opposed_pair syran_likeability
+    Like
+    Dislike
 
 *choice
   #Go back to the main menu.

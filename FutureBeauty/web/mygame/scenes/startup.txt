@@ -31,6 +31,9 @@
 
 *create danielle_likeability 50
 *create jayden_likeability 50
+*create ruven_likeability 50
+*create cydrea_likeability 50
+*create syran_likeability 50
 
 Please input name:
 *input_text name

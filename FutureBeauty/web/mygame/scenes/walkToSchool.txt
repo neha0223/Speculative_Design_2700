@@ -1,7 +1,14 @@
 You decide Mars is... different.
 
+The sky is too fake, the light from the sun too dim despite how it bothered you earlier. It's clearly something meant to mimic the Earthen blue sky, however you're not entirely sure if you want to air the differences aloud. 
+
+The glass of the dome the sky is stored in is thick, leading straight into thick metal that offers enough protection to keep everyone in this city alive but doesn't do much for aesthetic. It could be called unsightly even.
+
+Maybe you should learn to glance down once in a while, because someone bumps into you with enough velocity that it leaves you sprawling. 
+
+"Sorry!" A voice calls, and to its credit it does sound apologetic. There's a hand in your face, extended out- as aid maybe?
 *choice
-  #hi
+  #Take the hand.
     *finish
-  #hello
+  #Ignore it.
     *finish

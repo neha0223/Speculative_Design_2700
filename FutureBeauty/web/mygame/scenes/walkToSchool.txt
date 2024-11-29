@@ -6,9 +6,81 @@ The glass of the dome the sky is stored in is thick, leading straight into thick
 
 Maybe you should learn to glance down once in a while, because someone bumps into you with enough velocity that it leaves you sprawling. 
 
-"Sorry!" A voice calls, and to its credit it does sound apologetic. There's a hand in your face, extended out- as aid maybe?
+"Sorry!" A voice calls, and to its credit it does sound apologetic. There's a hand in your face, unnaturally long fingers arched toward you, extended out- as aid maybe?
 *choice
   #Take the hand.
-    *finish
+    The hand is warm when you take it, and gentle as it helps you lift yourself off the ground. The face the hand belonged to smiles now that you can see it and the person is...
+    *set ruven_likeability +5
+    *goto next1
   #Ignore it.
+    You right yourself on your own, steady ignoring the hand in front of you. The face the hand belonged to was pinched, and now that you can see it and the person is...
+    *set ruven_likeability -5
+    *goto next1
+
+*label next1
+
+Tall.
+
+Really, [i]really[/i] tall.
+
+Terra was tall, sure, but this guy...
+
+They were [i]tall[/i].
+
+"Hey, kiddo," they interrupt. Then, albeit kindly: "Where're your parents? You're too small to be wandering on your own aren'tcha?"
+
+Too... small...? [i]Kiddo??[/i]
+*choice
+  #Correct them politely. Maybe they're just confused...
+    "Oh sh- I mean, shoot, uh, sorry about that..." They rub the back of their head awkwardly, eyes briefly looking side to side in search of an escape.
+
+    Then, they pause, face brightening in excitement in less than in a second. "No way! You aren't from Earth are ya? I've never met one of you guys, ever!
+    *if (martianClothes)
+      I see you're already looking to integrate. Very hip! You guys say that on Earth don'tcha?"
+
+      Not in the past few dozen centuries, but it was a good try.
+      *set ruven_likeability +5
+    *elseif not(martianClothes)
+      "
+    *set ruven_likeability +5
+    *goto next3
+  #Correct them rudely. What do they mean [i]small[/i]!?
+    They scowl, and although they don't look particularly happy about it, they apologize. "Sorry, man, I had no idea."
+    *set ruven_likeability -10
+    *goto next3
+  #Stay silent.
+    They blink. Then again. "Right. Well, sorry kid I can't stay... Uh. Just stay in one spot I'm sure your parents'll find you."
+
+    You barely register them scattering. But they do, and now you're left alone, with only your thoughts in overwhelming silence.
+    *set ruvenMisunderstanding true
     *finish
+
+*label next3
+
+"Anyway," they continue, "I gotta get to school.
+*if (ruven_likeability >= 60)
+  You're going to the same place, aren'tcha? Maybe, I'm assuming- Wanna walk together?"
+  *choice
+    #Walk with them.
+      "Sweet! I'm gonna probe ya, hope you don't mind." With that they drag you forward, their excitement making you trip over yourself to keep up either their long legs.
+
+      "Speaking of probes- I'm Ruven by the way- speaking of probes do you Earth guys really-"
+
+      Ruven's mindless chatter fills the silence.
+      *set has_ruvenName true 
+      *set ruven_likeability +5
+      *set popularity +5
+      *finish
+    #Walk alone.
+      They look briefly disappointed. "No sweat, Earth-Guy. I'll see ya, yeah?"
+
+      With that they leave you alone. Though they do turn to wave, however briefly.
+
+      It's with this that you're left alone again.
+      *finish
+*elseif (ruven_likeability < 60)
+  I gotta get going. Like now. Nice talking to you Earth-Guy."
+
+  You barely register them scattering. But they do, and now you're left alone, with only your thoughts in overwhelming silence.
+  *finish
+  

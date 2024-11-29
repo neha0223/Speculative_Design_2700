@@ -5,6 +5,7 @@
   breakfast
   walkToSchool
   school
+  lunch
   shopping
   endOfDay
 
@@ -34,6 +35,9 @@
 *create ruven_likeability 50
 *create cydrea_likeability 50
 *create syran_likeability 50
+
+*create has_ruvenName false
+*create ruvenMisunderstanding false
 
 Please input name:
 *input_text name
@@ -67,7 +71,7 @@ You should probably get out of bed.
         *set popularity +5
         *set has_martianClothes true
         *goto main_menu
-  *if (not(option2_picked)) #Brush Your Teeth.
+  *if (not(option2_picked)) #Brush your teeth.
     *set option2_picked true
     *set option3_picked true
     Even the sinks here are odd... But it doesn't matter, you just need to brush your teeth.

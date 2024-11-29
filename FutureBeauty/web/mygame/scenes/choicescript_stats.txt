@@ -15,14 +15,14 @@ ${name}
 
 *stat_chart
   percent Popularity
-Danielle's approval:
+Daniella's approval:
 *stat_chart
-  opposed_pair danielle_likeability
+  opposed_pair daniella_likeability
     Like
     Dislike
-Jayden's approval:
+Tuan's approval:
 *stat_chart
-  opposed_pair jayden_likeability
+  opposed_pair tuan_likeability
     Like
     Dislike
 Ruven's approval:
@@ -30,14 +30,14 @@ Ruven's approval:
   opposed_pair ruven_likeability
     Like
     Dislike
-Cydrea's approval:
+Jade's approval:
 *stat_chart
-  opposed_pair cydrea_likeability
+  opposed_pair jade_likeability
     Like
     Dislike
-Syran's approval:
+Samir's approval:
 *stat_chart
-  opposed_pair syran_likeability
+  opposed_pair samir_likeability
     Like
     Dislike
 

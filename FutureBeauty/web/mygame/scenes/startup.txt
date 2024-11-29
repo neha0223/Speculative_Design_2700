@@ -30,11 +30,11 @@
 *create has_lunch false
 *create money 0
 
-*create danielle_likeability 50
-*create jayden_likeability 50
+*create daniella_likeability 50
+*create tuan_likeability 50
 *create ruven_likeability 50
-*create cydrea_likeability 50
-*create syran_likeability 50
+*create jade_likeability 50
+*create samir_likeability 50
 
 *create has_ruvenName false
 *create ruvenMisunderstanding false

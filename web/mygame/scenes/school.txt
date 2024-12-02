@@ -202,7 +202,7 @@ The lunch room is as packed as any other place in this building, which you're st
   *goto follow
 
 *label follow
-*image scenes/Jade_cafe.png
+*image scenes/Jade_cafe.PNG
 She's beautiful when she smiles at you. "Hi! ${name}, right? We're in the same class, I was wondering if you needed a spot to sit?"
 
 "Funny," a voice says behind you, and you get to see how the girl's beautiful face pinches in annoyance. "I was about to say the same."
@@ -239,7 +239,7 @@ She- Jade- turns to you then, her hair sweeping over her shoulder as she bends d
 *label lunchJ
 Jade looks as pleased as Samir does annoyed at your response. She takes your elbow, only not a light touch as she's careful of the food in your hands, and lead you away, leaving Samir by himself.
 
-*image scenes/Jade_cafe.png
+*image scenes/Jade_cafe.PNG
 
 "Don't mind him, he's a bit mean. Anyway, how have you been? I don't want you to feel like you're ostracized." Her lips quirk, "I also had trouble fitting in as a child, so I know people can be cruel, and I'm sorry if I did anything to make you feel unwelcome."
 
@@ -249,7 +249,7 @@ Jade looks as pleased as Samir does annoyed at your response. She takes your elb
 *label lunchS
 Samir looks as pleased as Jade does annoyed. She breathes though, and smiles at you, "If you ever change your mind I'll be right over there." She gestures towards a part of the lunch hall before leaving to follow her own directions.
 
-*image scenes/Samir_cafe.png
+*image scenes/Samir_cafe.PNG
 
 There's a hand on your, shoulder leading you to a table. "She wasn't lying, you see. I do have some Earth in me. My Nani and Dadi moved from there to here ages ago, and my family isn't well off so I've never been able to afford those metal cosmetic you see lying about."
 
@@ -259,14 +259,14 @@ You're offered a chair, in which you sit, before he settles in front of you.
 *choice
   #"What?"
     He smiles, and its almost plesant. 
-    *image scenes/Samir_cafe.png
+    *image scenes/Samir_cafe.PNG
     "It means there's finally someone more alien than me."
 
     The rest of your lunch is eaten in silence.
     *goto next5
   #Stay silent.
     He smiles, and its almost plesant. 
-    *image scenes/Samir_cafe.png
+    *image scenes/Samir_cafe.PNG
     "It means there's finally someone more alien than me."
 
     The rest of your lunch is eaten in silence.

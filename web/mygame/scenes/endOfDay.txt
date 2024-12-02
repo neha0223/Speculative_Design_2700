@@ -9,6 +9,7 @@
 
 *label dinner1
 After getting home and a seemingly undetermined time later, there's a knock at your bedroom door.
+*image scenes/parents_bedroom.png
 
 "Kiddo," Deimos this time, your foster father. "Terra, made dinner, how are you feeling? Want's some?"
 *choice
@@ -27,6 +28,8 @@ After getting home and a seemingly undetermined time later, there's a knock at y
 
 The kitchen is lively when you finally get there. Terra runs around trying to set the table, Deimos runs around trying to finish dinner. Even the baby runs in place in their feeding chair. In short, everyone is running.
 
+*image scenes/parents_house.png
+
 Terra waves you over when she sees you, leading you by the shoulders into a chair at their dining table with the strict instructions of waiting to be served and not helping at all. The baby stares at you from across the table, a piercing thing that hits you right in the soul... maybe you're reading into it too much...
 
 Eventually, the running does stop, and the Martian couple sits. Talk seems to come easy to them,  they talk about their day (Terra: errands, Deimos: work), the baby (always growing, said with a laugh), and eventually:
@@ -34,11 +37,13 @@ Eventually, the running does stop, and the Martian couple sits. Talk seems to co
 Deimos turns to you, smile cutting lines into his face. "How was school, kiddo?"
 *choice
   #School? It was fine you guess...
+    *image scenes/parents_house.png
     He smiles, so does Terra, "That's great, kiddo. Just remember first days are always the worst, you'll have better days."
 
     With that, the conversation continues, and there's a lighter feeling in your chest.
     *goto ending
   #Not great, to be honest...
+    *image scenes/parents_house.png
     He frowns, a sad looking thing. "I'm sorry about that, kiddo. Just remember first days are always the worst, you'll have better days."
 
     With that, the conversation continues, and there's a heavier feeling in your chest
@@ -46,6 +51,7 @@ Deimos turns to you, smile cutting lines into his face. "How was school, kiddo?"
 
 
 *label ending
+*image scenes/bedroom_night.png
 
 As you settle down for bed you can't help but think back on your day. The people you met, sure, but also the anxiety, the stares, the overwhelming feeling that you'll never fit in. You can't help but feel like...                                                                                                                                                                                                                                                                                                      
 

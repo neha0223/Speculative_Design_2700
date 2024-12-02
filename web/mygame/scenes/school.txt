@@ -3,7 +3,9 @@ The walk to school is rather uneventful all things considered.
   Ruven had yet to shut up, whether you answered their questions or not. But their chatter muted the stares and the alien noises around you, so if anything you have them to thank for that. 
 
   They do disappear from sight the second you reach the school gates, so there's that.
+  *goto gates
 
+*label gates
 Being as tall as the person earlier seemed to be a norm, not a special case, making everyone tower over you like...
 
 Now, standing in front of the doors, the glass a sticking blue against the deep red of the Martian lighting, nervousness hits you, making your legs wobbly and weak. You want nothing more than to turn around and flee, but... that would be cowardly, and you made a promise back to be brave. 
@@ -21,7 +23,7 @@ What do you do?
     Without a second thought you pack your things and speed out the door, conscious of the eyes on you every step.
     *set popularity -20
     *set school_ditched true
-    *goto endOfDay
+    *finish 
 
 *label next1
 
@@ -83,13 +85,13 @@ And with that, Daniella leaves you at the door to your class, Tuan following clo
         Without a second thought you pack your things and speed out the door, conscious of the eyes on you every step.
         *set popularity -15
         *set school_ditched true
-        *goto endOfDay
+        *finish
   #Ditch and go home.
     You can hardly bear any more of this, and the day has barely even started. 
 
     Without a second thought you pack your things and speed out the door, conscious of the eyes on you every step.
     *set school_ditched true
-    *goto endOfDay
+    *finish
 
 *label next3
 
@@ -104,35 +106,45 @@ The lunch room is as packed as any other place in this building, which you're st
          "Oh... Well, no worries Earth-Guy, I get it. Independence! And all that anyway. Talk to you later!"
 
          With that they leave, and you leave to buy your own lunch.
-       *elif not(has_ruvenName)
+         *goto lunchsegway1
+       *elseif not(has_ruvenName)
          You dig through you pocket to find your money, and run to join the lunch line before it  gets too long.
+         *goto lunchsegway1
+       *label lunchsegway1
        *set money -5
        *if (fed)
          *set fed true
+         *goto next4
        *elseif (hungry)
          *set hungry false
          *set fed true
+         *goto next4
        *elseif (starving)
          *set starving false
          *set fed true
-       *goto next4
+         *goto next4
   *if (has_lunch)
      #Eat the lunch Terra gave you.
        *if (has_ruvenName)
-         "Oh... Well, no worries Earth-Guy, I get it. Gotta appreciate what your given, and all that. Talk to you later!"
+         "Oh... Well, no worries Earth-Guy, I get it. Gotta appreciate what you're given, and all that. Talk to you later!"
 
          With that they leave, and you leave to search your backpack for your lunch.
-       *elif not(has_ruvenName)
-          
+         *goto lunchsegway2
+       *elseif not(has_ruvenName)
+          You search your backpack for your lunch.
+          *goto lunchsegway2
+       *label lunchsegway2
        *if (fed)
          *set fed true
+         *goto next4
        *elseif (hungry)
          *set hungry false
          *set fed true
+         *goto next4
        *elseif (starving)
          *set starving false
          *set fed true
-       *goto next4
+         *goto next4
   *if (has_ruvenName)
      #Let Ruven buy you lunch.
        "Yay, let's go! The food here isn't that bad- not great, but not bad. C'mon let's go getcha something!
@@ -140,49 +152,62 @@ The lunch room is as packed as any other place in this building, which you're st
        With that they leave, dragging you behind them through the lunch crowd.
        *if (fed)
          *set fed true
+         *goto next4
        *elseif (hungry)
          *set hungry false
          *set fed true
+         *goto next4
        *elseif (starving)
          *set starving false
          *set fed true
-       *goto next4
+         *goto next4
   #Go hungry.
     You decide you can't stomach anything, and resolve to not eat anything at all.
     *if (has_ruvenName)
+
       "If... you're sure Earth-Guy... I do have to go though." With that Ruven leaves with a worried look and a wave, leaving you hungry and alone in the middle of the lunchroom.
+      *goto starve
+    *elseif not(has_ruvenName)
+      *goto starve
+    *label starve
     *if (fed)
       *set fed false
       *set hungry true
+      *goto next4
     *elseif (hungry)
       *set hungry false
       *set starving false
+      *goto next4
     *elseif (starving)
+
       You're dizzy, your mouth is dry, and you are just short of passing out. A passing school nurse notices and sends you home early.
       *set home_early true
-      *goto endOfDay
-    *goto next4
+      *finish
 
 *label next4
 *if (has_RuvenName)
   After Ruven leaves you, a girl approaches you. 
-*elif not(has_ruvenName)
+  *goto follow
+*elseif not(has_ruvenName)
   A girl approaches you.
+  *goto follow
+
+*label follow
 She's beautiful when she smiles at you. "Hi! ${name}, right? We're in the same class, I was wondering if you needed a spot to sit?"
 
-  "Funny," a voice says behind you, and you get to see how the girl's beautiful face pinches in annoyance. "I was about to say the same."
+"Funny," a voice says behind you, and you get to see how the girl's beautiful face pinches in annoyance. "I was about to say the same."
 
-  You turn your head over your shoulder. A boy approaches you then, a proud lift to his head and a pretty smirk on his face. He practically hovers over you to go face to face with the girl. "Jade," he addresses, almost like an after thought.
+You turn your head over your shoulder. A boy approaches you then, a proud lift to his head and a pretty smirk on his face. He practically hovers over you to go face to face with the girl. "Jade," he addresses, almost like an after thought.
 
-  "Samir," she hisses. "Don't be mean."
+"Samir," she hisses. "Don't be mean."
 
-  "Mean?" He laughs, "I haven't done anything. I was just wondering if the little Earthling wanted to talk to someone who actually has roots to their home planet." 
+"Mean?" He laughs, "I haven't done anything. I was just wondering if the little Earthling wanted to talk to someone who actually has roots to their home planet." 
 
-  And... It makes sense. He almost looks like someone you'd see on Earth.
+And... It makes sense. He almost looks like someone you'd see on Earth.
 
-  Almost.
+Almost.
 
-  She- Jade- turns to you then, her hair sweeping over her shoulder as she bends down to look at you clearly. "You can eat with whoever you'd like."
+She- Jade- turns to you then, her hair sweeping over her shoulder as she bends down to look at you clearly. "You can eat with whoever you'd like."
 *choice
   #Have lunch with Jade.
     *set jade_likeability +5
@@ -200,39 +225,41 @@ She's beautiful when she smiles at you. "Hi! ${name}, right? We're in the same c
     *goto next5
 
 *label lunchJ
-  Jade looks as pleased as Samir does annoyed at your response. She takes your elbow, only not a light touch as she's careful of the food in your hands, and lead you away, leaving Samir by himself.
+Jade looks as pleased as Samir does annoyed at your response. She takes your elbow, only not a light touch as she's careful of the food in your hands, and lead you away, leaving Samir by himself.
 
-  "Don't mind him, he's a bit mean. Anyway, how have you been? I don't want you to feel like you're ostracized." Her lips quirk, "I also had trouble fitting in as a child, so I know people can be cruel, and I'm sorry if I did anything to make you feel unwelcome."
+"Don't mind him, he's a bit mean. Anyway, how have you been? I don't want you to feel like you're ostracized." Her lips quirk, "I also had trouble fitting in as a child, so I know people can be cruel, and I'm sorry if I did anything to make you feel unwelcome."
 
-  "Now," you both settle at a table, "You tell me about your day, and I can tell you about mine."
-  *goto next5
+"Now," you both settle at a table, "You tell me about your day, and I can tell you about mine."
+*goto next5
 
 *label lunchS
-  Samir looks as pleased as Jade does annoyed. She breathes though, and smiles at you, "If you ever change your mind I'll be right over there." She gestures towards a part of the lunch hall before leaving to follow her own directions.
+Samir looks as pleased as Jade does annoyed. She breathes though, and smiles at you, "If you ever change your mind I'll be right over there." She gestures towards a part of the lunch hall before leaving to follow her own directions.
 
-  There's a hand on your, shoulder leading you to a table. "She wasn't lying, you see. I do have some Earth in me. My Nani and Dadi moved from there to here ages ago, and my family isn't well off so I've never been able to afford those metal cosmetic you see lying about."
+There's a hand on your, shoulder leading you to a table. "She wasn't lying, you see. I do have some Earth in me. My Nani and Dadi moved from there to here ages ago, and my family isn't well off so I've never been able to afford those metal cosmetic you see lying about."
 
-  You're offered a chair, in which you sit, before he settles in front of you.
+You're offered a chair, in which you sit, before he settles in front of you.
 
-  "So you being here, do you know what it means?"
-  *choice
-    #"What?"
-      He smiles, and its almost plesant. 
+"So you being here, do you know what it means?"
+*choice
+  #"What?"
+    He smiles, and its almost plesant. 
 
-      "It means there's finally someone more alien than me."
+    "It means there's finally someone more alien than me."
 
-      The rest of your lunch is eaten in silence.
-      *goto next5
-    #Stay silent.
-      He smiles, and its almost plesant. 
+    The rest of your lunch is eaten in silence.
+    *goto next5
+  #Stay silent.
+    He smiles, and its almost plesant. 
 
-      "It means there's finally someone more alien than me."
+    "It means there's finally someone more alien than me."
 
-      The rest of your lunch is eaten in silence.
-      *goto next5
+    The rest of your lunch is eaten in silence.
+    *goto next5
 
 *label next5
+
 *page_break
+
 Walking out of the school is almost the same as walking in, as in you're still not trying to be trampled.
 
 You do eventually make it out to the main road, and then on the route back home, ignoring the looks that follow you. Because of course school gets out just as literally everyone is passing by.

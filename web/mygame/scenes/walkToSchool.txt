@@ -18,7 +18,7 @@ Maybe you should learn to glance down once in a while, because someone bumps int
     *goto next1
 
 *label next1
-
+*image scenes/Ruven.png
 Tall.
 
 Really, [i]really[/i] tall.
@@ -32,6 +32,7 @@ They were [i]tall[/i].
 Too... small...? [i]Kiddo??[/i]
 *choice
   #Correct them politely. Maybe they're just confused...
+    *image scenes/Ruven_half.png
     "Oh sh- I mean, shoot, uh, sorry about that..." They rub the back of their head awkwardly, eyes briefly looking side to side in search of an escape.
 
     Then, they pause, face brightening in excitement in less than in a second. "No way! You aren't from Earth are ya? I've never met one of you guys, ever!
@@ -45,10 +46,12 @@ Too... small...? [i]Kiddo??[/i]
     *set ruven_likeability +5
     *goto next3
   #Correct them rudely. What do they mean [i]small[/i]!?
+    *image scenes/Ruven_half.png
     They scowl, and although they don't look particularly happy about it, they apologize. "Sorry, man, I had no idea."
     *set ruven_likeability -10
     *goto next3
   #Stay silent.
+    *image scenes/Ruven_half.png
     They blink. Then again. "Right. Well, sorry kid I can't stay... Uh. Just stay in one spot I'm sure your parents'll find you."
 
     You barely register them scattering. But they do, and now you're left alone, with only your thoughts in overwhelming silence.
@@ -62,6 +65,7 @@ Too... small...? [i]Kiddo??[/i]
   You're going to the same place, aren'tcha? Maybe, I'm assuming- Wanna walk together?"
   *choice
     #Walk with them.
+      *image scenes/Ruven_half.png
       "Sweet! I'm gonna probe ya, hope you don't mind." With that they drag you forward, their excitement making you trip over yourself to keep up either their long legs.
 
       "Speaking of probes- I'm Ruven by the way- speaking of probes do you Earth guys really-"
@@ -72,6 +76,7 @@ Too... small...? [i]Kiddo??[/i]
       *set popularity +5
       *finish
     #Walk alone.
+      *image scenes/Ruven_half.png
       They look briefly disappointed. "No sweat, Earth-Guy. I'll see ya, yeah?"
 
       With that they leave you alone. Though they do turn to wave, however briefly.
@@ -79,6 +84,7 @@ Too... small...? [i]Kiddo??[/i]
       It's with this that you're left alone again.
       *finish
 *elseif (ruven_likeability < 60)
+  *image scenes/Ruven_half.png
   I gotta get going. Like now. Nice talking to you Earth-Guy."
 
   You barely register them scattering. But they do, and now you're left alone, with only your thoughts in overwhelming silence.

@@ -1,8 +1,6 @@
-
-(End of day sequence)
+*if (home_early)
+*elseif (school_ditched)
 
 *choice
-  #hi
-    *finish
-  #hello
-    *finish
+  #Join them for dinner.
+  #Skip dinner and head to bed early.

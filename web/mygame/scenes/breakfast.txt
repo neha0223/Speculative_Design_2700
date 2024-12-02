@@ -45,6 +45,7 @@ There was a variety of food in the kitchen: fruits, greens, eggs fresh off the s
     Maybe it's just you, but the food is entirely unappetizing. The fruit looks too fake, the greens too discolored, the meat too plastic. In fact, the thought of staying in this house leaves you nauseous.
 
     Without a second thought or a idea to say goodbye, you take your backpack and leave.
+    *set starving true
     *finish
 
 *label next2

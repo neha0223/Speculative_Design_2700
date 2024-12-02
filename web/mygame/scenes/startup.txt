@@ -44,6 +44,7 @@ Please input name:
 *input_text name
 
 *page_break
+*image scenes/bedroom_day.png
 
 It's a bright morning, an artificial sun beats down on you through the window.
 

@@ -32,7 +32,9 @@ The inside is a pure pandemonium.
 People push you left and right, heading to their classes or noticing their friends or anything that makes you feel like a rat scurrying around a kitchen full of humans. Or no, not humans, everyone seems to have a large amount of metal on their limbs. So not humans. Cyborgs.
 
 Someone's long fingers tap your shoulder, and you jump around to follow the source. 
+
 *image scenes/Dani_Tuan.png
+
 A girl and a boy stand there, and you can't help but notice the way the crowd parts for them.
 
 "Hello," the girl says, expression serene. "Are you ${name}?"
@@ -173,7 +175,7 @@ The lunch room is as packed as any other place in this building, which you're st
   #Go hungry.
     You decide you can't stomach anything, and resolve to not eat anything at all.
     *if (has_ruvenName)
-      *image scenes/Ruven_cafe.png
+
       "If... you're sure Earth-Guy... I do have to go though." With that Ruven leaves with a worried look and a wave, leaving you hungry and alone in the middle of the lunchroom.
       *goto starve
     *elseif not(has_ruvenName)
@@ -209,7 +211,7 @@ She's beautiful when she smiles at you. "Hi! ${name}, right? We're in the same c
 
 You turn your head over your shoulder. A boy approaches you then, a proud lift to his head and a pretty smirk on his face. He practically hovers over you to go face to face with the girl. "Jade," he addresses, almost like an after thought.
 
-*image scenes/Jade_Samir_cafe.png
+*image scenes/Jade_Samir_cafe.PNG
 
 "Samir," she hisses. "Don't be mean."
 
@@ -258,15 +260,19 @@ You're offered a chair, in which you sit, before he settles in front of you.
 "So you being here, do you know what it means?"
 *choice
   #"What?"
-    He smiles, and its almost pleasant. 
+    He smiles, and its almost plesant. 
+
     *image scenes/Samir_cafe.PNG
+
     "It means there's finally someone more alien than me."
 
     The rest of your lunch is eaten in silence.
     *goto next5
   #Stay silent.
-    He smiles, and its almost pleasant. 
+    He smiles, and its almost plesant. 
+   
     *image scenes/Samir_cafe.PNG
+
     "It means there's finally someone more alien than me."
 
     The rest of your lunch is eaten in silence.

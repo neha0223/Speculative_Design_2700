@@ -33,17 +33,17 @@ A clank of metal on glass from the kitchen, then:
 There was a variety of food in the kitchen: fruits, greens, eggs fresh off the stove, various meats.
 *choice
   #Fill your plate. Don't want to go hungry!
-    *image scenes/house.png
+    *image scenes/terra_kitchen.png
     Everything could not look better and your mouth salivates at the thought of eating it. You feel gratefulness well up inside you. 
     *set plateFull true
     *goto next2
   #Take a little. You're not [i]that[/i] hungry...
-    *image scenes/house.png
+    *image scenes/terra_kitchen.png
     Stuffing your face may do the opposite of what you want, but a little can't hurt, right?
     *set plateHalfFull true
     *goto next2
   #Skip breakfast altogether.
-    *image scenes/house.png
+    *image scenes/terra_kitchen.png
     The thought of eating anything makes your stomach churn. You'd hate to see what happened if you were to eat anything.
 
     ...Maybe not eating anything would be for the best.
@@ -58,6 +58,7 @@ There was a variety of food in the kitchen: fruits, greens, eggs fresh off the s
 
 *label next2
 You settle yourself at the table, plate in hand. Terra returns moments after, the baby seemingly settled, glancing at your plate as she walks by.
+
 *image scenes/terra_kitchen.png
 
 *if (plateFull)
@@ -85,6 +86,7 @@ You settle yourself at the table, plate in hand. Terra returns moments after, th
       *goto next3
 
 *label next3
+
 "So, today is going to go great for you, I know it. But, um, I was thinking of packing you a lunch, would that be okay with you? I could always give you money instead. Or both? Whatever you prefer, dear..."
 *choice
   #Ask for the lunch.
@@ -105,6 +107,7 @@ You settle yourself at the table, plate in hand. Terra returns moments after, th
     *goto next4
 
 *label next4
+
 She glances at a clock. "I think you should head out now. You'll need time to get to school."
 *choice
   #Leave.

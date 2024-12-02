@@ -18,7 +18,9 @@ Maybe you should learn to glance down once in a while, because someone bumps int
     *goto next1
 
 *label next1
+
 *image scenes/Ruven.png
+
 Tall.
 
 Really, [i]really[/i] tall.

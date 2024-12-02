@@ -5,8 +5,6 @@
   breakfast
   walkToSchool
   school
-  lunch
-  shopping
   endOfDay
 
 *create popularity 50
@@ -38,6 +36,9 @@
 
 *create has_ruvenName false
 *create ruvenMisunderstanding false
+
+*create school_ditched false
+*create home_early false
 
 Please input name:
 *input_text name

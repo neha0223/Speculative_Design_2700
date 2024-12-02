@@ -15,6 +15,15 @@ ${name}
 
 *stat_chart
   percent Popularity
+Hunger status:
+*label hunger_status
+Hunger Status:
+*if (fed)
+    You feel well-fed and content.
+*if (hungry)
+    Your stomach growls with hunger.
+*if (starving)
+    You are starving and need food urgently.
 Daniella's approval:
 *stat_chart
   opposed_pair daniella_likeability

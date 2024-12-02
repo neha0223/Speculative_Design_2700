@@ -44,7 +44,6 @@ Please input name:
 *input_text name
 
 *page_break
-*image scenes/bedroom_day.png
 
 It's a bright morning, an artificial sun beats down on you through the window.
 
@@ -63,15 +62,12 @@ You should probably get out of bed.
   *if (not(option1_picked)) #Get Dressed.
     *set option1_picked true
     *set option3_picked true
-    *image scenes/bedroom_day.png
     Moving to the closet, a variety of clothing and colors hits you, both yours and things your host family bought for you. You're tempted to wear what you usually would at home, but Terra, your host mother, helped you choose an outfit last night. Should you choose that instead?
     *choice
       #Wear your own clothes.
-        *image scenes/bedroom_day.png
         Maybe the comfort of the familiarity will make you more confident... 
         *goto main_menu
       #Wear what your host mother helped you pick out.
-        *image scenes/bedroom_day.png
         You feel a bit uncomfortable. Hopefully the feeling wears off...
         *set popularity +5
         *set has_martianClothes true
@@ -79,7 +75,6 @@ You should probably get out of bed.
   *if (not(option2_picked)) #Brush your teeth.
     *set option2_picked true
     *set option3_picked true
-
     Even the sinks here are odd... But it doesn't matter, you just need to brush your teeth.
 
     ...
@@ -88,7 +83,6 @@ You should probably get out of bed.
     *goto main_menu
   *if (not(option3_picked)) #Stay in Bed.
     *set option3_picked true
-    *image scenes/bedroom_day.png
     Lifting the covers over your head blocks the sun, so you're content to continue laying in bed.
   
     There's a knock at the door. 

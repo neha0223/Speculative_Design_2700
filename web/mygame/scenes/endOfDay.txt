@@ -1,6 +1,56 @@
 *if (home_early)
-*elseif (school_ditched)
+  The house is silent when you walk in, clearly no one is home. You don't feel dizzy any more, thanks to the nurse, but you do still feel a little sick. Maybe lying down will help?
 
+  *goto dinner1
+*elseif (school_ditched)
+  No one's home when you get there, which makes it easier to hide your guilt. You decide to hide out in your room until it's a reasonable hour. You'll can lie about what time you get home and hope they believe you.
+
+  *goto dinner1
+
+*label dinner1
+After getting home and a seemingly undetermined time later, there's a knock at your bedroom door.
+
+"Kiddo," Deimos this time, your foster father. "Terra, made dinner, how are you feeling? Want's some?"
 *choice
   #Join them for dinner.
+    "Sweet!" Deimos cheers, and a baby gurgles. Oh, he's holding the baby. "We'll see you downstairs when you're ready."
+    *goto dinner2
   #Skip dinner and head to bed early.
+    Deimos is quiet for a moment, two, before: "It's alright. Just remember that you're free to whatever's in the pantry or the fridge. Don't worry about waking us up we won't mind."
+
+    After a second, the footsteps recede, leaving you alone in your thoughts once more.
+
+    ...
+    *goto ending
+
+*label dinner2
+
+The kitchen is lively when you finally get there. Terra runs around trying to set the table, Deimos runs around trying to finish dinner. Even the baby runs in place in their feeding chair. In short, everyone is running.
+
+Terra waves you over when she sees you, leading you by the shoulders into a chair at their dining table with the strict instructions of waiting to be served and not helping at all. The baby stares at you from across the table, a piercing thing that hits you right in the soul... maybe you're reading into it too much...
+
+Eventually, the running does stop, and the Martian couple sits. Talk seems to come easy to them,  they talk about their day (Terra: errands, Deimos: work), the baby (always growing, said with a laugh), and eventually:
+
+Deimos turns to you, smile cutting lines into his face. "How was school, kiddo?"
+*choice
+  #School? It was fine you guess...
+    He smiles, so does Terra, "That's great, kiddo. Just remember first days are always the worst, you'll have better days."
+
+    With that, the conversation continues, and there's a lighter feeling in your chest.
+    *goto ending
+  #Not great, to be honest...
+    He frowns, a sad looking thing. "I'm sorry about that, kiddo. Just remember first days are always the worst, you'll have better days."
+
+    With that, the conversation continues, and there's a heavier feeling in your chest
+    *goto ending
+
+
+*label ending
+
+As you settle down for bed you can't help but think back on your day. The people you met, sure, but also the anxiety, the stares, the overwhelming feeling that you'll never fit in. You can't help but feel like...                                                                                                                                                                                                                                                                                                      
+
+Like...
+
+Like an alien.
+
+*finish

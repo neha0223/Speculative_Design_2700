@@ -32,13 +32,12 @@ The inside is a pure pandemonium.
 People push you left and right, heading to their classes or noticing their friends or anything that makes you feel like a rat scurrying around a kitchen full of humans. Or no, not humans, everyone seems to have a large amount of metal on their limbs. So not humans. Cyborgs.
 
 Someone's long fingers tap your shoulder, and you jump around to follow the source. 
-*image scenes/Dani_Tuan.png
+
 A girl and a boy stand there, and you can't help but notice the way the crowd parts for them.
 
 "Hello," the girl says, expression serene. "Are you ${name}?"
 *choice
   #Confirm.
-    *image scenes/Dani_Tuan.png
     The girl's smile widens. "It's nice to meet you, ${name}! I'm Daniella, this here is Tuan-" the boy waves- "we're a part of the school council, and we're here to show you around."
  
     She takes a step around you, ready to lead. "If you would follow me."
@@ -48,7 +47,6 @@ A girl and a boy stand there, and you can't help but notice the way the crowd pa
     *set tuan_likeability +5
     *goto next2
   #Deny.
-    *image scenes/Dani_Tuan.png
     She laughs, although seems far from amused. "I know its you, and it's nice to meet you, ${name}! I'm Daniella, this here is Tuan-" the boy waves- "we're a part of the school council, and we're here to show you around."
  
     She takes a step around you, ready to lead. "If you would follow me."
@@ -65,14 +63,11 @@ The girl introduces herself as Daniella- what an Earthen name, you can't help bu
 
 You weren't aware people stilled called Eartheans 'Earthlings', anymore. You almost laugh, what an alien thing to say.
 
-*image scenes/Dani_Tuan_class.png
-
 The girl stops with a bounce of her hair, before turning to you and Tuan. "This is your stop, the teacher should be able to help you with seating."
 
 And with that, Daniella leaves you at the door to your class, Tuan following close behind her after giving you a nod. You can already feel the stares of your new classmates staring at you from inside, the feeling prickling and making your hair stand on edge.
 *choice
   #Go to class.
-    *image scenes/class.png
     The teacher inside waves you over, and you can't help but head inside.
     
     Class is just as boring as it is on Earth, only with the added bonus of you having less of an idea of what's going on and people staring at you like you have two heads.
@@ -103,13 +98,11 @@ And with that, Daniella leaves you at the door to your class, Tuan following clo
 The lunch room is as packed as any other place in this building, which you're starting to realize is the norm. What do you even do for lunch?
 
 *if (has_ruvenName)
-  *image scenes/Ruven_cafe.png
   Ruven pops up at your side, startling your out of your reverie. "Earth-Guy!" They greet, a smile and a half somehow fitting on their face. They make to pat your head, before they see your face and back out of such idea with a laugh. "How's your day been? Listen, I can't stay buuuut I can buy you lunch right now. My treat, no favors or dues. Whatcha say?"
 *choice
   *if (money > 0)
      #Buy lunch.
        *if (has_ruvenName)
-         *image scenes/Ruven_cafe.png
          "Oh... Well, no worries Earth-Guy, I get it. Independence! And all that anyway. Talk to you later!"
 
          With that they leave, and you leave to buy your own lunch.
@@ -133,7 +126,6 @@ The lunch room is as packed as any other place in this building, which you're st
   *if (has_lunch)
      #Eat the lunch Terra gave you.
        *if (has_ruvenName)
-         *image scenes/Ruven_cafe.png
          "Oh... Well, no worries Earth-Guy, I get it. Gotta appreciate what you're given, and all that. Talk to you later!"
 
          With that they leave, and you leave to search your backpack for your lunch.
@@ -155,7 +147,6 @@ The lunch room is as packed as any other place in this building, which you're st
          *goto next4
   *if (has_ruvenName)
      #Let Ruven buy you lunch.
-       *image scenes/Ruven_cafe.png
        "Yay, let's go! The food here isn't that bad- not great, but not bad. C'mon let's go getcha something!
 
        With that they leave, dragging you behind them through the lunch crowd.
@@ -173,7 +164,7 @@ The lunch room is as packed as any other place in this building, which you're st
   #Go hungry.
     You decide you can't stomach anything, and resolve to not eat anything at all.
     *if (has_ruvenName)
-      *image scenes/Ruven_cafe.png
+
       "If... you're sure Earth-Guy... I do have to go though." With that Ruven leaves with a worried look and a wave, leaving you hungry and alone in the middle of the lunchroom.
       *goto starve
     *elseif not(has_ruvenName)
@@ -202,14 +193,11 @@ The lunch room is as packed as any other place in this building, which you're st
   *goto follow
 
 *label follow
-*image scenes/Jade_cafe.PNG
 She's beautiful when she smiles at you. "Hi! ${name}, right? We're in the same class, I was wondering if you needed a spot to sit?"
 
 "Funny," a voice says behind you, and you get to see how the girl's beautiful face pinches in annoyance. "I was about to say the same."
 
 You turn your head over your shoulder. A boy approaches you then, a proud lift to his head and a pretty smirk on his face. He practically hovers over you to go face to face with the girl. "Jade," he addresses, almost like an after thought.
-
-*image scenes/Jade_Samir_cafe.png
 
 "Samir," she hisses. "Don't be mean."
 
@@ -239,8 +227,6 @@ She- Jade- turns to you then, her hair sweeping over her shoulder as she bends d
 *label lunchJ
 Jade looks as pleased as Samir does annoyed at your response. She takes your elbow, only not a light touch as she's careful of the food in your hands, and lead you away, leaving Samir by himself.
 
-*image scenes/Jade_cafe.PNG
-
 "Don't mind him, he's a bit mean. Anyway, how have you been? I don't want you to feel like you're ostracized." Her lips quirk, "I also had trouble fitting in as a child, so I know people can be cruel, and I'm sorry if I did anything to make you feel unwelcome."
 
 "Now," you both settle at a table, "You tell me about your day, and I can tell you about mine."
@@ -248,8 +234,6 @@ Jade looks as pleased as Samir does annoyed at your response. She takes your elb
 
 *label lunchS
 Samir looks as pleased as Jade does annoyed. She breathes though, and smiles at you, "If you ever change your mind I'll be right over there." She gestures towards a part of the lunch hall before leaving to follow her own directions.
-
-*image scenes/Samir_cafe.PNG
 
 There's a hand on your, shoulder leading you to a table. "She wasn't lying, you see. I do have some Earth in me. My Nani and Dadi moved from there to here ages ago, and my family isn't well off so I've never been able to afford those metal cosmetic you see lying about."
 
@@ -259,14 +243,14 @@ You're offered a chair, in which you sit, before he settles in front of you.
 *choice
   #"What?"
     He smiles, and its almost plesant. 
-    *image scenes/Samir_cafe.PNG
+
     "It means there's finally someone more alien than me."
 
     The rest of your lunch is eaten in silence.
     *goto next5
   #Stay silent.
     He smiles, and its almost plesant. 
-    *image scenes/Samir_cafe.PNG
+
     "It means there's finally someone more alien than me."
 
     The rest of your lunch is eaten in silence.

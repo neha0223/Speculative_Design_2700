@@ -6,6 +6,8 @@ Ships stroll past the window, large and small, but they're quiet so you don't pa
 
 A clank of metal on glass from the kitchen, then:
 
+*image scenes/terra_kitchen.png
+
 "Oh, hello, ${name}!" Terra, your host mother.
 *if (martianClothes)
   "I see you're wearing what we picked out! I'm happy you like them! Did you sleep well?"
@@ -13,12 +15,15 @@ A clank of metal on glass from the kitchen, then:
   "Did you sleep well?"
 *choice
   #"Yes."
+    *image scenes/terra_kitchen.png
     "I'm glad. It's- It's good to see you settling in so well." 
     *goto next1
   #"No."
+    *image scenes/terra_kitchen.png
     She frown, eyes pitying. "Oh... I'm sorry, dear. Being in a new place is hard, I- I can only imagine how you feel."
     *goto next1
   #Stay silent.
+    *image scenes/terra_kitchen.png
     "It's alright," An awkward smile touches her lips. "You don't have to answer if you don't want to."
     *goto next1
 
@@ -28,14 +33,17 @@ A clank of metal on glass from the kitchen, then:
 There was a variety of food in the kitchen: fruits, greens, eggs fresh off the stove, various meats.
 *choice
   #Fill your plate. Don't want to go hungry!
+    *image scenes/house.png
     Everything could not look better and your mouth salivates at the thought of eating it. You feel gratefulness well up inside you. 
     *set plateFull true
     *goto next2
   #Take a little. You're not [i]that[/i] hungry...
+    *image scenes/house.png
     Stuffing your face may do the opposite of what you want, but a little can't hurt, right?
     *set plateHalfFull true
     *goto next2
   #Skip breakfast altogether.
+    *image scenes/house.png
     The thought of eating anything makes your stomach churn. You'd hate to see what happened if you were to eat anything.
 
     ...Maybe not eating anything would be for the best.
@@ -50,7 +58,7 @@ There was a variety of food in the kitchen: fruits, greens, eggs fresh off the s
 
 *label next2
 You settle yourself at the table, plate in hand. Terra returns moments after, the baby seemingly settled, glancing at your plate as she walks by.
-
+*image scenes/terra_kitchen.png
 
 *if (plateFull)
   She seems satified by the state of your plate, nodding to herself pleasantly as she continues on.
@@ -64,36 +72,39 @@ You settle yourself at the table, plate in hand. Terra returns moments after, th
   She stops, bitting her already worried-bitten lips. "${name}... are you [i]sure[/i] you don't want anything?"
   *choice
     #Give in. You guess you could try to eat...
+      *image scenes/terra_kitchen.png
       Terra takes the plate from in front of you- slowly, as if she's dealing with a wild animal- before heading off to the kitchen to begin loading it up with food. Thankfully, she doesn't put too much.
 
       The plate is settled in front of you moments later with a quiet clink of porcelain.
       *set hungry true
       *goto next3
     #Double down. You're [i]not[/i] hungry.
+      *image scenes/terra_kitchen.png
       Terra's eyes shift, but she blessedly doesn't push any further.
       *set starving true
       *goto next3
 
 *label next3
-
 "So, today is going to go great for you, I know it. But, um, I was thinking of packing you a lunch, would that be okay with you? I could always give you money instead. Or both? Whatever you prefer, dear..."
 *choice
   #Ask for the lunch.
+    *image scenes/terra_kitchen.png
     Terra seems happy with your choice, moving to the fridge to get what she needs.
     *set has_lunch true
     *goto next4
   #Ask for the money.
+    *image scenes/terra_kitchen.png
     Terra digs through her purse before producing a bill, sliding the
     *set money +10
     *goto next4
   #Ask for both.
+    *image scenes/terra_kitchen.png
     Terra seems happy with your choice, moving to the fridge to get what she needs, but not before setting a shiny $10 bill on the table in front of you.
     *set has_lunch true
     *set money +10
     *goto next4
 
 *label next4
-
 She glances at a clock. "I think you should head out now. You'll need time to get to school."
 *choice
   #Leave.
